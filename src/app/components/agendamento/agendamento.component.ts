@@ -21,7 +21,7 @@ import { Barbeiro } from '../../models/barbeiro.model';
           <strong>Cliente:</strong> {{ cliente?.nome }}
         </div>
         <div class="resumo-item">
-          <strong>Serviço:</strong> {{ servico?.nome }} - R$ {{ servico?.preco.toFixed(2) }}
+          <strong>Serviço:</strong> {{ servico?.nome }} - R$ {{ servico?.preco?.toFixed(2) || '0.00' }}
         </div>
         <div class="resumo-item">
           <strong>Barbeiro:</strong> {{ barbeiro?.nome }}
