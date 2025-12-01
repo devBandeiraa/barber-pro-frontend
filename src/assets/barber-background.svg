@@ -1,0 +1,69 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Padrão de madeira -->
+    <pattern id="woodPattern" patternUnits="userSpaceOnUse" width="200" height="200">
+      <rect width="200" height="200" fill="#8B6F47"/>
+      <path d="M0 50 Q50 30 100 50 T200 50" stroke="#6B5233" stroke-width="2" fill="none" opacity="0.3"/>
+      <path d="M0 100 Q50 80 100 100 T200 100" stroke="#6B5233" stroke-width="2" fill="none" opacity="0.3"/>
+      <path d="M0 150 Q50 130 100 150 T200 150" stroke="#6B5233" stroke-width="2" fill="none" opacity="0.3"/>
+      <circle cx="50" cy="25" r="3" fill="#6B5233" opacity="0.2"/>
+      <circle cx="150" cy="75" r="2" fill="#6B5233" opacity="0.2"/>
+      <circle cx="80" cy="125" r="2.5" fill="#6B5233" opacity="0.2"/>
+    </pattern>
+    
+    <!-- Gradiente para overlay -->
+    <linearGradient id="overlayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#01257D;stop-opacity:0.7" />
+      <stop offset="50%" style="stop-color:#01257D;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fundo de madeira -->
+  <rect width="1920" height="1080" fill="url(#woodPattern)"/>
+  
+  <!-- Elementos decorativos de barbeiro (sutil) -->
+  <!-- Tesouras -->
+  <g opacity="0.08" transform="translate(200, 150)">
+    <path d="M0 0 L15 20 L30 0" stroke="#01257D" stroke-width="3" fill="none"/>
+    <path d="M0 40 L15 20 L30 40" stroke="#01257D" stroke-width="3" fill="none"/>
+    <circle cx="15" cy="20" r="4" fill="#01257D"/>
+  </g>
+  
+  <g opacity="0.08" transform="translate(800, 300)">
+    <path d="M0 0 L15 20 L30 0" stroke="#01257D" stroke-width="3" fill="none"/>
+    <path d="M0 40 L15 20 L30 40" stroke="#01257D" stroke-width="3" fill="none"/>
+    <circle cx="15" cy="20" r="4" fill="#01257D"/>
+  </g>
+  
+  <g opacity="0.08" transform="translate(1400, 200)">
+    <path d="M0 0 L15 20 L30 0" stroke="#01257D" stroke-width="3" fill="none"/>
+    <path d="M0 40 L15 20 L30 40" stroke="#01257D" stroke-width="3" fill="none"/>
+    <circle cx="15" cy="20" r="4" fill="#01257D"/>
+  </g>
+  
+  <!-- Navalha -->
+  <g opacity="0.08" transform="translate(500, 500) rotate(45)">
+    <rect x="0" y="0" width="60" height="8" rx="4" fill="#01257D"/>
+    <rect x="0" y="0" width="20" height="8" rx="4" fill="#00FFFF"/>
+  </g>
+  
+  <g opacity="0.08" transform="translate(1200, 700) rotate(-30)">
+    <rect x="0" y="0" width="60" height="8" rx="4" fill="#01257D"/>
+    <rect x="0" y="0" width="20" height="8" rx="4" fill="#00FFFF"/>
+  </g>
+  
+  <!-- Pente -->
+  <g opacity="0.08" transform="translate(300, 800)">
+    <rect x="0" y="0" width="4" height="40" fill="#01257D"/>
+    <rect x="8" y="0" width="4" height="40" fill="#01257D"/>
+    <rect x="16" y="0" width="4" height="40" fill="#01257D"/>
+    <rect x="24" y="0" width="4" height="40" fill="#01257D"/>
+    <rect x="32" y="0" width="4" height="40" fill="#01257D"/>
+    <rect x="0" y="0" width="36" height="8" fill="#01257D"/>
+  </g>
+  
+  <!-- Overlay com gradiente -->
+  <rect width="1920" height="1080" fill="url(#overlayGradient)"/>
+</svg>
+

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Agendamento, AgendamentoRequest } from '../models/agendamento.model';
 
@@ -23,8 +23,18 @@ export class AgendamentoService {
     return this.http.get<Agendamento[]>(`${this.apiUrl}/cliente/${clienteId}`);
   }
 
+  listarPorBarbeiro(barbeiroId: number): Observable<Agendamento[]> {
+    return this.http.get<Agendamento[]>(`${this.apiUrl}/barbeiro/${barbeiroId}`);
+  }
+
+  listarPorBarbeiroEPeriodo(barbeiroId: number, inicio: string, fim: string): Observable<Agendamento[]> {
+    const params = new HttpParams()
+      .set('inicio', inicio)
+      .set('fim', fim);
+    return this.http.get<Agendamento[]>(`${this.apiUrl}/barbeiro/${barbeiroId}/periodo`, { params });
+  }
+
   buscarPorId(id: number): Observable<Agendamento> {
     return this.http.get<Agendamento>(`${this.apiUrl}/${id}`);
   }
 }
-
